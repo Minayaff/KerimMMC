@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="about-us-text" xml:space="preserve">
+    <value>The company has been operating since December 5, 2011. Karim Temir Tikinti Gurashdirma LLC has been involved in many construction and reconstruction works. It is a legal company that has worked with many large companies and state enterprises. Caspian Pipe Coatings, ADO-G We have cooperation with companies such as the Aliyev Oil Refinery. Our company is expanding its cooperation not only with local companies but also with many foreign companies. MHWirth has also worked with foreign companies such as North West Construction in many areas. Currently, we have relations and cooperation with many companies engaged in construction, repair, installation and reconstruction in our country.</value>
+  </data>
+  <data name="advantage" xml:space="preserve">
+    <value>Get a competitive advantage with us</value>
+  </data>
+  <data name="banner" xml:space="preserve">
+    <value>Build your future </value>
+  </data>
+  <data name="banner_alt" xml:space="preserve">
+    <value>today</value>
+  </data>
+  <data name="built" xml:space="preserve">
+    <value>Construction of buildings</value>
+  </data>
+  <data name="built_alt" xml:space="preserve">
+    <value>Rise higher with us, our quality is our job!</value>
+  </data>
+  <data name="clean" xml:space="preserve">
+    <value>Clean and accurate</value>
+  </data>
+  <data name="exp" xml:space="preserve">
+    <value>ANNUAL EXPERIENCE</value>
+  </data>
+  <data name="kran" xml:space="preserve">
+    <value>Rental of cranes</value>
+  </data>
+  <data name="kran_alt" xml:space="preserve">
+    <value>Более здоровые здания будут расти с нашими кранами</value>
+  </data>
+  <data name="more" xml:space="preserve">
+    <value>Read More</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>the most frequently asked questions</value>
+  </data>
+  <data name="question1" xml:space="preserve">
+    <value>In what areas do you operate?</value>
+  </data>
+  <data name="question2" xml:space="preserve">
+    <value>Diagnostics of lifting devices, technical inspection and testing of equipment operated at potentially hazardous facilities Building, water canals, shore protection works and other construction works.</value>
+  </data>
+  <data name="question3" xml:space="preserve">
+    <value>Is there a unit price estimate?</value>
+  </data>
+  <data name="question4" xml:space="preserve">
+    <value>No, because after the instrument is inspected, the assessment is carried out in accordance with the price offer</value>
+  </data>
+  <data name="question5" xml:space="preserve">
+    <value>What are the standards?</value>
+  </data>
+  <data name="question6" xml:space="preserve">
+    <value>ISO 9001,14001 and AZS standards and GOST</value>
+  </data>
+  <data name="tech" xml:space="preserve">
+    <value>Underwater technical works</value>
+  </data>
+  <data name="tech_alt" xml:space="preserve">
+    <value>We do the deepest, the best work</value>
+  </data>
+  <data name="typesOfActivities" xml:space="preserve">
+    <value>Services</value>
+  </data>
+</root>

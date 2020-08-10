@@ -1,0 +1,24 @@
+﻿@model KerimMMC.Models.Blog
+@{
+    ViewData["Title"] = "Create";
+}
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" asp-for="HeadText" class="form-control" />
+            <span asp-validation-for="HeadText" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="image">Image</label>
+            <input type="file" asp-for="Photo" accept="image/*" class="form-control" />
+            <span asp-validation-for="Photo" class="text-danger"></span>
+
+        </div>
+        <div class="form-group">
+            <label for="text">Text</label>
+            <textarea asp-for="Text" class="form-control"></textarea>
+            <span asp-validation-for="Text" class="text-danger"></span>
+        </div>
+        <input type="submit" asp-action="Create" class="btn btn-success btn-block"  value="Create"/>
+    </form>

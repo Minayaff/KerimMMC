@@ -1,0 +1,252 @@
+﻿@model IEnumerable<Blog>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+@inject IViewLocalizer Localizer
+
+
+
+<!--    Main Area Start   -->
+<main>
+    <!--    Slider Area Start   -->
+    <div class="slider-area main-home-slider" style="background-image: url('/images/bg-img/consturctor.jpg');background-size: cover; background-repeat: no-repeat;">
+        <div class="home-slide home-slide-shape">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xl-6 col-lg-7 col-md-10 align-self-center">
+                        <div class="home-slide-text">
+                            <h3 data-animation="fadeInDown" data-delay="0.3s">
+                                <a href="#">@Localizer["banner"] <span>@Localizer["banner_alt"]</span></a>
+                            </h3>
+                            <a  asp-controller="Home" asp-action="Services" class="btn btn-theme icon-left" data-animation="fadeInUp"
+                               data-delay="1.3s">
+                                <i class="far fa-plus"></i>@Localizer["typesOfActivities"]
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-lg-5 d-none d-xl-block d-lg-block">
+                        <div class="home-slide-thumb" data-animation="fadeIn" data-delay="0.6s">
+                            <img src="~/images/slider/woman-thumb.png" alt="woman">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Slider Area End    -->
+    <!--    Service Area Start   -->
+    <div class="service-area">
+        <div class="container-fluid px-0">
+            <div class="row no-gutters">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xl-4 col-lg-4 col-md-12">
+                        <div class="service-wrap bg-grey service-text-white">
+                            <div class="service-details">
+                                <h4><a  asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.HeadText</a></h4>
+                                @if (item.Text.Length > 101)
+                                {
+                                    <p>
+                                        @Html.Raw(item.Text.Substring(0, 100)); <span>...</span>
+                                    </p>
+                                }
+                                <a  asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id" class="read-more"><i class="far fa-plus"></i>Ətraflı</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+            <style>
+                .no-gutters .col-xl-4:nth-child(2) .bg-grey {
+                    background-color: #F0C845 !important;
+                }
+
+                .no-gutters .col-xl-4:last-child .bg-grey {
+                    background-color: #F2F3F5 !important;
+                }
+
+                .no-gutters .col-xl-4:last-child .service-wrap .service-details h4 a {
+                    color: #443400;
+                    font-weight: 900;
+                }
+
+                .no-gutters .col-xl-4:last-child .service-wrap.service-text-white .service-details p {
+                    color: #443400 !important;
+                }
+
+                .no-gutters .col-xl-4:last-child .service-wrap .service-details .read-more {
+                    color: #F0C845;
+                }
+            </style>
+
+        </div>
+    </div>
+    <!--    Service Area End    -->
+    <!--    About Area Start   -->
+    <div class="about-area pt-80 pb-80">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-xl-6 col-lg-6 col-md-10 mb-md-50 mb-xs-50">
+                    <div class="about-img-wrap clearfix">
+                        <div class="about-thumb thumb-1">
+                            <img src="~/images/about/about-1.jpg" alt="about-img">
+                        </div>
+                        <div class="about-thumb thumb-2">
+                            <img src="~/images/about/about-2.jpg" alt="about-img">
+                        </div>
+                        <div class="about-thumb thumb-3">
+                            <img src="~/images/about/about-3.jpg" alt="about-img">
+                        </div>
+                        <div class="about-icon">
+                            <img src="~/images/icon/paint.png" alt="icon-paint">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-10">
+                    <div class="section-title mb-60 mb-xs-30">
+                        <span class="sub-title">@Localizer["clean"]</span>
+                        <h3>@Localizer["about"]</h3>
+                        <p>
+                            @Localizer["about-us-text"]
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    About Area End    -->
+    <!--    Service Area 2 Start   -->
+    <div class="service-area bg-cover" style="background-image: url(images/bg/service-bg-1.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-10">
+                    <div class="section-title mb-80 mb-xs-50">
+                        <span class="sub-title">@Localizer["clean"]</span>
+                        <h3>@Localizer["advantage"]</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-wrap-2 mb-30">
+                        <div class="service-icon">
+                            <img src="~/images/icon/delivery.png" alt="icon">
+                        </div>
+                        <div class="service-details">
+                            <h4><a asp-controller="Home" asp-action="Services">@Localizer["kran"]</a></h4>
+                            <p>
+                                @Localizer["kran_alt"]
+                            </p>
+                            <a asp-controller="Home" asp-action="Services" class="read-more"><i class="far fa-plus"></i> @Localizer["more"]</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-wrap-2 mb-30">
+                        <div class="service-icon">
+                            <img src="~/images/icon/pipe.png" alt="icon">
+                        </div>
+                        <div class="service-details">
+                            <h4><a asp-controller="Home" asp-action="Services">@Localizer["built"]</a></h4>
+
+                            <p>
+                                @Localizer["built_alt"]
+                            </p>
+                            <a asp-controller="Home" asp-action="Services" class="read-more"><i class="far fa-plus"></i>@Localizer["more"]</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6">
+                    <div class="service-wrap-2 mb-30">
+                        <div class="service-icon">
+                            <img src="~/images/icon/home.png" alt="icon">
+                        </div>
+                        <div class="service-details">
+                            <h4><a asp-controller="Home" asp-action="Services">@Localizer["tech"]</a></h4>
+
+                            <p>
+                                @Localizer["tech_alt"]
+                            </p>
+                            <a asp-controller="Home" asp-action="Services" class="read-more"><i class="far fa-plus"></i>@Localizer["more"]</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Service Area 2 End    -->
+    <!--    Faq Area Start   -->
+    <div class="faq-area pt-120 pb-90">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-6 col-lg-7 mb-md-50 mb-xs-50">
+                    <div class="section-title mb-60 mb-xs-50">
+                        <h3 style="font-size: 4rem;">@Localizer["question"]</h3>
+                    </div>
+
+                    <div class="accordion-wrapper" id="accordion-1">
+                        <div class="accordion-wrap">
+                            <div class="accordion-header" id="heading-1">
+                                <button type="button" data-toggle="collapse" data-target="#collapse-1"
+                                        aria-expanded="true" aria-controls="collapse-1">
+                                    @Localizer["question1"]
+                                </button>
+                            </div>
+                            <div id="collapse-1" class="collapse show" aria-labelledby="heading-1"
+                                 data-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    @Localizer["question2"]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-header" id="heading-2">
+                                <button class="collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    @Localizer["question3"]
+                                </button>
+                            </div>
+                            <div id="collapse-2" class="collapse" aria-labelledby="heading-2"
+                                 data-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    @Localizer["question4"]
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-wrap">
+                            <div class="accordion-header" id="heading-3">
+                                <button class="collapsed" type="button" data-toggle="collapse"
+                                        data-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    @Localizer["question5"]
+                                </button>
+                            </div>
+                            <div id="collapse-3" class="collapse" aria-labelledby="heading-3"
+                                 data-parent="#accordion-1">
+                                <div class="accordion-body">
+                                    @Localizer["question6"]
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5 text-center">
+                    <div class="faq-info-wrap">
+                        <img src="~/images/thumb/thumb-1.jpg" alt="thumb">
+                        <div class="faq-info">
+                            <div class="faq-info-num">20</div>
+                            <div class="faq-info-text">
+                                <span>@Localizer["exp"]</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Faq Area End    -->
+
+
+</main>
+<!--    Main Area End    -->

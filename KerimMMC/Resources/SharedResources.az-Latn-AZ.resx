@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>Haqqımızda</value>
+  </data>
+  <data name="about-us" xml:space="preserve">
+    <value>Haqqımızda</value>
+  </data>
+  <data name="about-us-text" xml:space="preserve">
+    <value>Şirkət 05.12.2011 ci ildən fəaliyyətə başlayan Kərim Təmir Tikinti Quraşdırma MMC bir çox tikinti və rekonstruksiya işlərinin aparılmasında fəaliyyətini sürdürür.Bir çox böyük şirkətlərlə və dövlət müəssisələri ilə birgə fəaliyyəti olmuş hüquqi şirkətdir.”Caspian Pipe Coatings”, “ADO-G” “Heydər Əliyev adında Neft Emalı Zavodunda kimi şirkətlərlə əməkdaşlığımız mövcuddur.Şirkətimiz yalnız yerli şirkətlərlə deyil bir çox xarici şirkətlərlə də öz əməkdaşlıq fəaliyyətini genişləndirir.
+“MHWirth” “North vest konstruction” kimi xarici şirkətlərlə də öz fəaliyyətini bir çox sahələrdə göstərmişdir.Hal hazırda ölkəmizdə fəaliyyət göstərən bir çox tikinti təmir,montaj,yenidənqurma növ fəaliyyəti ilə məşğul olan şirkətlərlə əlaqələrimiz əməkdaşlığımız və birgə fəaliyyətimiz vardır.</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Ünvan</value>
+  </data>
+  <data name="blog" xml:space="preserve">
+    <value>Xəbərlər</value>
+  </data>
+  <data name="certfication" xml:space="preserve">
+    <value>Our certificates</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Şirkətimizin Öhdəliyi</value>
+  </data>
+  <data name="company-text" xml:space="preserve">
+    <value>Şirkətlər qrupu öz fəaliyyətinin əsasını müəssisənin dinamik və hərtərəfli inkişafında maddi nemətlərdən səmərəli istifadə və ətraf mühitin gələcək nəsillər üçün maksimum dərəcə yaxşı qorunmasında görür. 
+Bunun üçün müəssisə aşağıdakı öhdəlikləri qəbul edib: 
+•	Bütün beynəlxalq və ölkədaxili ekoloji normativlərə əməl olunmasının gözlənilməsi;
+•	Maddi resurslara maksimum qənaət etməklə, ətraf mühitin çirklənməsinin azaldılması ;
+•	İstehsalat proseslərinin bütün mərhələlərində təkmilləşdirilməsi və enerji sərfinin azaldılması;
+•	Müəsisənin ətraf mühitin qorunması üzrə fəaliyyətinin daim təkmilləşdirilməsi;
+•	Ətraf mühitin zibillənməsinin qarşısının alınması üçün qabaqlıyıcı tədbirlər planın hazırlanması;
+•	Əməyin mühafizəsi və istehsalatın təhlükəsizliyi üzrə vəziyyəti daim nəzarətdə saxlanması, bu sahədə vəziyyətin daim yaxşılaşdırması;
+•	Özünün istehsalat sahələrində, təhlükəsiz əmək şəraiti yaratmalı, bu sahədə əməyin təhlükəsizliyi və gigiyenası normativlərinə əməl edilməsi;
+•	Müəsisənin işçilərinin “əməyin təhlükəsizliyi” və“ekologiyanın qorunması” işlərinə hamılıqla cəlb edilməsi və bu sahədə göstəricilərin daim yaxşılaşdırılmasına nail olmaq;
+•	Ekoloji siyasətin həyata keçirilməsində müəssisənin nəzərdə tutduğu əsas mexanizmlər.
+•	Ekoloji siyasətin mahiyətini bütün işçilərə çatdırmalı;
+•	Ekologiyanın və ətraf mühitin qorunması yolunda bütün təşəbbüsləri qiymətləndirməli;
+•	Personalın ekoloji biliyinin daim artırılmasına nail olmalı;
+•	Material qənaəti, enerji qənaəti, yeni texnologiyanın tətbiqi üzrə yaradıcı təşəbbüslərin mükafatlandırılması;
+•	İstehsal olunan məhsulların ekoloji sertifikatlaşdırılması;
+•	Ekoloji siyasətin həyata keçirilməsi, müəsisənin imzaladığı bütün müqavilələrdə öz əksini tapmaqla daim diqqət mərkəzində olacaqdır.</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Əlaqə</value>
+  </data>
+  <data name="contactme" xml:space="preserve">
+    <value>Əlaqə Vasitəsi</value>
+  </data>
+  <data name="environmental" xml:space="preserve">
+    <value>Ətraf Mühitin Qorunması və Əməyin Mühafizəsi</value>
+  </data>
+  <data name="environmental-text" xml:space="preserve">
+    <value>Müasir istehsalat fəaliyyətlərinin mürəkkəbliyi Ətraf Mühitin Qorunmasına və Əməyin Mühafizəsinə kompleks yanaşma tələb edir:
+Təhlükəsiz əmək şəraitinin yaradılması;
+İşçilərin təhlükəsiz əmək metodları üzrə təlimatlandırılması;
+İstehsal avadanlıqlarının təhlükəsizliyinin təmini;
+Bina və qurğuların təhlükəsizliyi;
+İşçilərin fərdi mühafizə vasitələri ilə təmini;
+Optimal iş və istirahət rejiminin yaradılması;
+Periodik baxış və nəzarət</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>Ümumi Fəaliyyət</value>
+  </data>
+  <data name="general-text" xml:space="preserve">
+    <value>KƏRİM TƏMİR TİKİNTİ QURAŞDIRMA MMC özünün çoxsaylı fəaliyyəti ilə ətraf mühitə az da olsa etdiyi təsirə görə cəmiyyət qarşısında məsuliyyətini başa düşür. Bu məsuliyyətin təsiridir ki, müəssisə həyata keçirdiyi hər bir layihə üçün xüsusi olaraq ətraf mühitin qorunması planını hazırlayır. Bu planda maddi resurslarından maksimum səmərəli istifadə, enerji daşıyıcıyılarına maksimum qənaət, ətraf mühitin tullantılarla zibillənməsinin qarşısının alınması üzrə önləyici tədbirlər planı hazırlayır. Müəssisənin öz fəaliyyətində əsasən daha məsuliyyətli yanaşdığı sahələr də vardır.Bunlar , su hövzələrin çirklənmədən qorunması və torpaqların rekultivasiyası məsələləridir. Müəsisə öz fəaliyyətində Azərbaycan Respublikası üzrə qəbul olunmuş bütün ekolojı aktlara, direktivlərə və normalara riayət etməyi öz fəaliyyəti üçün əsas sayır</value>
+  </data>
+  <data name="karim" xml:space="preserve">
+    <value>Kərim Təmir Tikinti Quraşdırma/</value>
+  </data>
+  <data name="karim-text" xml:space="preserve">
+    <value>Şirkətlər qrupu öz fəaliyyətinin əsasını müəssisənin dinamik və hər tərəfli inkişafında maddi nemətlərdən səmərəli istifadə və ətraf mühitin gələcək nəsillər üçün maksimum dərəcə yaxşı qorunmasında görür.
+Bunun üçün müəsisə aşağıdaki öhdəlikləri qəbul edib: Bütün beynəlxalq və ölkədaxili ekoloji normativlərə əməl olunmasının gözlənilməsi; Maddi resurslara maksimum qənaət etməklə, ətraf mühitin çirklənməsinin azaldılması ; Istehsalat proseslərinin bütün mərhələlərində təkmilləşdirilməsi və  enerji sərfinin azaldılması;
+Müəsisənin ətraf mühitin qorunması üzrə fəaliyyətinin daim təkmilləşdirilməsi; Ətraf mühitin zibillənməsinin qarşısının alınması üçün qabaqlıyıcı tədbirlər planın hazırlanması;
+Əməyin mühafizəsi və istehsalatın təhlükəsizliyi üzrə vəziyyəti daim nəzarətdə saxlanması, bu sahədə vəziyyətin daim yaxşılaşdırması; Özünün istehsalat sahələrində, təhlükəsiz əmək şəraiti yaratmalı, bu sahədə əməyin təhlükəsizliyi və gigiyenası normativlərinə əməl edilməsi; Müəsisənin işçilərinin “əməyin təhlükəsizliyi” və“ekologiyanın qorunması” işlərinə hamılıqla cəlb edilməsi və bu sahədə göstəricilərin daim yaxşılaşdırılmasına nail olmaq; Ekoloji siyasətin həyata keçirilməsində müəssisənin nəzərdə tutduğu əsas mexanizmlər. Ekoloji siyasətin mahiyətini bütün işçilərə çatdırmalı; Ekologiyanın və ətraf mühitin qorunması yolunda bütün təşəbbüsləri qiymətləndirməli; Personalın ekoloji biliyinin daim artırılmasına nail olmalı; Material qənaəti, enerji qənaəti, yeni texnologiyanın tətbiqi üzrə yaradıcı təşəbbüslərin mükafatlandırılması; Istehsal olunan məhsulların ekolojı sertifikatlaşdırılması; Ekoloji siyasətin həyata keçirilməsi , müəsisənin imzaladığı bütün müqavilələrdə , öz əksini tapmaqla,  daim diqqət mərkəzində olacaqdır. Ekoloji siyasət müəsisənin fəaliyyəti dövründə daim təkmilləşdiriləcək, təshih ediləcək, yeniləşdiriləcəkdir.
+“Kərim təmir tikinti qurasdırma “ özünün çoxsaylı fəaliyyəti ilə ətraf mühitə az da olsa etdiyi təsirə görə cəmiyyət qarşısında məsuliyyətini başa düşür. Bu məsuliyyətin təsiridir ki, müəssisə həyata keçirdiyi hər bir layihə üçün xüsusi olaraq ətraf mühitin qorunması planını hazırlayır. Bu planda maddi resurslarından maksimum səmərəli istifadə, enerji daşıyıcıyılarına maksimum qənaət, ətraf mühitin tullantılarla zibillənməsinin qarşısının alınması üzrə önləyici tədbirlər planı hazırlayır.
+Müəssisənin öz fəaliyyətində əsasən daha məsuliyyətli yanaşdığı sahələr də vardır.Bunlar su hövzələrin çirklənmədən qorunması və torpaqların rekultivasiyası məsələləridir. Müəsisə öz fəaliyyətində Azərbaycan Respublikası üzrə qəbul olunmuş bütün ekolojı aktlara, direktivlərə və normalara riayət etməyi öz fəaliyyəti üçün əsas sayır.</value>
+  </data>
+  <data name="mainPage" xml:space="preserve">
+    <value>Ana Səhifə</value>
+  </data>
+  <data name="method" xml:space="preserve">
+    <value>Məqsəd və Methodlar</value>
+  </data>
+  <data name="methods-text" xml:space="preserve">
+    <value>“KƏRİM TƏMİR TİKİNTİ QURAŞDIRNA” MMC istehsalat travmatizminin qarşısını almaq, bədbəxt hadisələrin və risklərin yaranma səbəblərini aradan qaldırmaq üçün təxirəsalınmaz tədbirlərin görülməsini özünə borc bilir. Bu sahədə beynəlxalq standartların, dövlət normativlərinin tələblərinə uyğun iş mühitinin yaradılmasını qarşısına məqsəd qoyur.</value>
+  </data>
+  <data name="policy" xml:space="preserve">
+    <value>Ekoloji Siyasət</value>
+  </data>
+  <data name="policy-text" xml:space="preserve">
+    <value>Müəsisənin öz istehsalat fəalyyəti dövründə ətraf mühitə müəyyən təsirlər etdiyindən daim özünün müəssisədaxili ekolojı siyasətini təkmilləşdirməyə üstünlük verir. Ətraf mühitin qorunması işində kompleks yanaşmanı təmin etmək üçün müəssisə daxilində daimi fəalyyət göstərilir.</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>BİZƏ SUALINIZ VAR?</value>
+  </data>
+  <data name="safety" xml:space="preserve">
+    <value>Sətəm</value>
+  </data>
+  <data name="safety-text" xml:space="preserve">
+    <value>“KƏRİM TƏMİR TİKİNTİ QURAŞDIRMA” Şirkəti öz əmək resurslarını yüksək qiymətləndirir. Öz əməkdaşları üçün sağlam və təhlükəsiz iş şəraitinin yaradılmasını daim inkişaf etdirir. Şirkət aşağıdakı prinsipləri əsas tutur: İstehsalat fəaliyyəti nəticələrinin işçilərin sağlamlığına müsbət təsiri; Kollektivin hər bir üzvünün təhlükəsiz iş şəraitində işləmək hüququ; Təhlükəsizliyin təmin olunması məsələlərinin həllində ictimai və dövlət qurumları ilə sıx əlaqə.</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Fəaliyyət Növləri</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Rəhbərlik</value>
+  </data>
+</root>

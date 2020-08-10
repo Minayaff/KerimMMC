@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="about-us" xml:space="preserve">
+    <value>О нас</value>
+  </data>
+  <data name="about-us-text" xml:space="preserve">
+    <value>Компания работает с 5 декабря 2011 года. ООО «Карим темир тикинти гурашдирма» участвует во многих строительных и реконструкционных работах. Это юридическая компания, которая работала со многими крупными компаниями и государственными предприятиями. Caspian Pipe Coatings, ADO-G Мы сотрудничаем с такими компаниями, как НПЗ им. Алиева. Наша компания расширяет сотрудничество не только с местными компаниями, но и со многими иностранными компаниями. MHWirth также работала с иностранными компаниями, такими как North West Construction, во многих областях. В настоящее время мы имеем отношения и сотрудничество со многими компаниями, занимающимися строительством, ремонтом, установкой и реконструкцией в нашей стране.</value>
+  </data>
+  <data name="address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="blog" xml:space="preserve">
+    <value>Новости</value>
+  </data>
+  <data name="certfication" xml:space="preserve">
+    <value>Наши сертификаты</value>
+  </data>
+  <data name="company" xml:space="preserve">
+    <value>Приверженность нашей компании</value>
+  </data>
+  <data name="company-text" xml:space="preserve">
+    <value>Группа компаний видит в своей деятельности динамичное и всестороннее развитие предприятия, эффективное использование материальных ресурсов и максимально возможную защиту окружающей среды для будущих поколений.
+С этой целью компания взяла на себя следующие обязательства:
+• ожидать соблюдения всех международных и внутренних экологических стандартов;
+• снижение загрязнения окружающей среды за счет экономии материальных ресурсов;
+• Улучшение на всех этапах производственных процессов и снижение энергопотребления;
+• постоянное совершенствование природоохранной деятельности компании;
+• разработка плана профилактических мероприятий по предотвращению загрязнения окружающей среды;
+• Постоянный мониторинг ситуации по охране труда и промышленной безопасности, постоянное улучшение ситуации в этой сфере;
+• Создание безопасных условий труда на своих производственных площадках, соблюдение стандартов безопасности и гигиены труда в этой области;
+• вовлекать всех сотрудников в «безопасность труда» и «защиту окружающей среды» и добиваться постоянного улучшения в этой области;
+• Основные механизмы, предусмотренные предприятием при реализации экологической политики.
+• довести суть экологической политики до всех работников;
+• Оценить все инициативы по защите окружающей среды и окружающей среды;
+• добиться постоянного повышения экологической осведомленности персонала;
+• поощрение творческих инициатив по экономии материалов, энергосбережению, применению новых технологий;
+• экологическая сертификация производимой продукции;
+• Реализация экологической политики всегда будет в центре внимания, что отражено во всех контрактах, подписанных компанией.</value>
+  </data>
+  <data name="contact" xml:space="preserve">
+    <value>Kонтакт</value>
+  </data>
+  <data name="contactme" xml:space="preserve">
+    <value>Свяжитесь со мной</value>
+  </data>
+  <data name="environmental" xml:space="preserve">
+    <value>Охрана окружающей среды и охрана труда</value>
+  </data>
+  <data name="environmental-text" xml:space="preserve">
+    <value>Сложность современной производственной деятельности требует комплексного подхода к охране окружающей среды и охране труда:
+Создание безопасных условий труда;
+Проинструктировать сотрудников о безопасных методах работы;
+Обеспечение безопасности производственного оборудования;
+Охрана зданий и сооружений;
+Обеспечение работников средствами индивидуальной защиты;
+Создание оптимального режима работы и отдыха;
+Периодический обзор и мониторинг</value>
+  </data>
+  <data name="general" xml:space="preserve">
+    <value>Общая деятельность</value>
+  </data>
+  <data name="general-text" xml:space="preserve">
+    <value>KARIM REPAIR CONSTRUCTION INSTALLATION LLC понимает свою ответственность перед обществом за его небольшое воздействие на окружающую среду благодаря своей многочисленной деятельности. В результате этой ответственности компания разрабатывает конкретный план защиты окружающей среды для каждого реализуемого проекта. В связи с этим разрабатывается план профилактических мероприятий для наиболее эффективного использования материальных ресурсов, максимальной экономии энергоносителей, предотвращения загрязнения окружающей среды. Есть также области, где компания более ответственно подходит к своей деятельности. Это вопросы защиты водных бассейнов от загрязнения и мелиорации. Основой своей деятельности компания считает соблюдение всех природоохранных актов, директив и норм, принятых в Азербайджанской Республике.</value>
+  </data>
+  <data name="karim" xml:space="preserve">
+    <value>КАРИМ РЕМОНТНО-СТРОИТЕЛЬНАЯ МОНТАЖ</value>
+  </data>
+  <data name="karim-text" xml:space="preserve">
+    <value>Группа компаний видит в своей деятельности динамичное и всестороннее развитие предприятия, эффективное использование материальных ресурсов и максимально возможную защиту окружающей среды для будущих поколений. С этой целью компания взяла на себя следующие обязательства: обеспечение соответствия всем международным и национальным экологическим стандартам; Снижение загрязнения окружающей среды за счет экономии материальных ресурсов; Улучшение на всех этапах производственных процессов и снижение энергопотребления; Постоянное совершенствование природоохранной деятельности предприятия; Подготовка плана профилактических мероприятий по предотвращению засорения окружающей среды; Постоянный мониторинг ситуации по охране труда и промышленной безопасности, постоянное улучшение ситуации в этой сфере; Создавать безопасные условия труда на своих производственных площадях, соблюдать нормы охраны труда и гигиены в этой области; Вовлеките всех сотрудников в «безопасность труда» и «защиту окружающей среды» и достигайте постоянного улучшения в этой области; Основные механизмы, предусмотренные предприятием при реализации экологической политики. Довести суть экологической политики до всех работников; Оценить все инициативы по защите окружающей среды и окружающей среды; Добиться постоянного повышения экологической осведомленности персонала; Награждение творческими инициативами по экономии материалов, энергосбережению, применению новых технологий; Экологическая сертификация выпускаемой продукции; Реализация экологической политики всегда будет в центре внимания, что отражено во всех контрактах, подписанных компанией. Экологическая политика будет постоянно совершенствоваться, корректироваться и обновляться в процессе работы предприятия. «Карим ремонт, строительство и монтаж» понимает свою ответственность перед обществом за его небольшое воздействие на окружающую среду благодаря своей многочисленной деятельности. В результате этой ответственности компания разрабатывает конкретный план защиты окружающей среды для каждого реализуемого проекта. В связи с этим разрабатывается план профилактических мероприятий для наиболее эффективного использования материальных ресурсов, максимальной экономии энергоносителей, предотвращения загрязнения окружающей среды. Есть также области, где компания более ответственно подходит к своей деятельности. Это вопросы защиты водных бассейнов от загрязнения и мелиорации. Основой своей деятельности компания считает соблюдение всех природоохранных актов, директив и норм, принятых в Азербайджанской Республике.</value>
+  </data>
+  <data name="mainPage" xml:space="preserve">
+    <value>Главная страница</value>
+  </data>
+  <data name="method" xml:space="preserve">
+    <value>Цели и методы</value>
+  </data>
+  <data name="methods-text" xml:space="preserve">
+    <value>КАРИМ РЕМОНТНО-СТРОИТЕЛЬНАЯ МОНТАЖ LLC обязуется принять срочные меры для предотвращения производственного травматизма и устранения причин несчастных случаев и рисков. Он направлен на создание рабочей среды в соответствии с требованиями международных стандартов и государственных стандартов в этой области.</value>
+  </data>
+  <data name="policy" xml:space="preserve">
+    <value>Экологическая политика</value>
+  </data>
+  <data name="policy-text" xml:space="preserve">
+    <value>Компания всегда предпочитает совершенствовать свою внутреннюю экологическую политику, поскольку она оказывает определенное влияние на окружающую среду в ходе производственной деятельности. В целях обеспечения комплексного подхода к охране окружающей среды на предприятии ведется постоянная деятельность.</value>
+  </data>
+  <data name="question" xml:space="preserve">
+    <value>У ВАС ЕСТЬ ВОПРОСЫ К НАМ?</value>
+  </data>
+  <data name="safety" xml:space="preserve">
+    <value>Здоровье, безопасность труда и окружающая среда</value>
+  </data>
+  <data name="safety-text" xml:space="preserve">
+    <value>Компания «КАРИМ РЕМОНТНО-СТРОИТЕЛЬНАЯ МОНТАЖ» высоко ценит свои трудовые ресурсы. Постоянно развивает здоровые и безопасные условия труда для своих сотрудников. В основе компании лежат следующие принципы: положительное влияние результатов производственной деятельности на здоровье работников; Право каждого сотрудника на работу в безопасных условиях труда; Тесная связь с общественностью и государственными органами в решении вопросов безопасности.</value>
+  </data>
+  <data name="services" xml:space="preserve">
+    <value>Виды деятельности</value>
+  </data>
+  <data name="team" xml:space="preserve">
+    <value>Pуководство</value>
+  </data>
+</root>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Contact>
+
+@{
+
+    ViewData["Title"] = "Index";
+}
+
+
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-header">
+                <strong class="card-title">Data Table</strong>
+            </div>
+            <div class="card-body">
+                <table id="bootstrap-data-table" class="table table-striped table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width: 25%;">Tam Ad</th>
+                            <th>Email</th>
+                            <th>Mesaj</th>
+                            <th>Ətraflı</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var contact in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <p>@contact.Fullname</p>
+                                </td>
+                                <td>
+                                    <p>@contact.Email</p>
+                                </td>
+                                <td>
+                                   
+                                        <p>@contact.Message</p>
+                                </td>
+                                <td style="display:flex">
+                                    <a asp-action="Details" asp-route-id="@contact.Id" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                                    <a asp-action="Delete" asp-route-id="@contact.Id" class="btn btn-danger" onclick="return confirm('Silmək istədiyinizdən əminsiz? ')"><i class="fa fa-trash-o"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>

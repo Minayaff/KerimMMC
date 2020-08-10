@@ -1,0 +1,31 @@
+﻿@model Blog
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <form>
+        <div class="form-group">
+            <img class="img-thumbnail" style="width:50%" src="~/images/blog/@Model.Image" />
+        </div>
+        <div class="form-group">
+            <label for="title">Tarix</label>
+            <input type="text" class="form-control" value="@Model.CreatedDate.ToShortDateString()" disabled />
+        </div>
+        <div class="form-group">
+            <label for="title">Başlıq</label>
+            <input type="text" class="form-control" value="@Model.HeadText" disabled />
+        </div>
+
+        <div class="form-group">
+            <label for="text">Text</label>
+            <textarea class="form-control"  rows="6" cols="50" disabled>@Model.Text</textarea>
+        </div>
+
+    </form>
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <a style="margin-top:2rem" asp-controller="Blog" asp-action="Index" class="btn btn-primary btn-lg"><i class="fas fa-long-arrow-alt-left"></i> Back to Blogs</a>
+            </div>
+        </div>
+

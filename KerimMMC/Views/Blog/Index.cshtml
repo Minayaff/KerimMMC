@@ -1,0 +1,63 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+
+@model IEnumerable<Blog>;
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!--    Main Area Start   -->
+<main>
+    <!--    Breadcrumb Area Start   -->
+    <section class="breadcrumb-area pt-180 pb-180 pb-md-150 pt-md-150 pb-xs-100 pt-xs-100" data-overlay="dark"
+             data-opacity="9" style="background-image: url(~/images/bg/breadcrumb-bg-1.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="breadcrumb-content">
+                        <h3 class="title">
+                            @SharedLocalizer["blog"]
+                        </h3>
+                        <ul>
+                            <li><a  asp-controller="Home" asp-action="Index"> @SharedLocalizer["mainPage"]</a></li>
+                            <li class="active">
+                                @SharedLocalizer["blog"]
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Breadcrumb Area Start   -->
+    <!--    Team Area Start   -->
+    <div class="blog-area pt-120 pb-90">
+        <div class="container">
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="blog-box mb-30">
+                            <div class="blog-box-thumb" style="height: 14rem;">
+                                <a  asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">
+                                    <img  src="~/images/blog/@item.Image" />
+                                </a>
+                            </div>
+                            <div class="blog-box-details">
+
+                                <h4>
+                                    <a asp-controller="Blog" asp-action="Details" asp-route-id="@item.Id">@item.HeadText</a>
+                                </h4>
+                                <span class="date">@item.CreatedDate.ToShortDateString()</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+    <!--    Team Area End    -->
+
+</main>
+<!--    Main Area End    -->

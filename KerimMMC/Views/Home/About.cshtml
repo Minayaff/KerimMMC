@@ -1,0 +1,145 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+@{
+    ViewData["Title"] = "About";
+}
+<style>
+    h1 {
+        font-size: 2rem;
+    }
+</style>
+
+<!--    Main Area Start   -->
+<main>
+    <!--    Breadcrumb Area Start   -->
+    <section class="breadcrumb-area pt-180 pb-180 pb-md-150 pt-md-150 pb-xs-100 pt-xs-100"
+             data-overlay="dark"
+             data-opacity="9"
+             style="background-image: url(/images/bg/breadcrumb-bg-1.jpg);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="breadcrumb-content">
+                        <h3 class="title">@SharedLocalizer["about"]</h3>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a></li>
+                            <li class="active">@SharedLocalizer["about"]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Breadcrumb Area Start   -->
+    <!--    Team Area Start   -->
+    <div class="team-area">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 style="font-size:50px; margin:4rem 0">@SharedLocalizer["certfication"]</h1>
+            </div>
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="team-wrap mb-40">
+                        <div class="team-thumb">
+                            <a href="team-details.html">
+                                <img src="~/images/about/lisenziya1.bmp" alt="team">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="team-wrap mb-40">
+                        <div class="team-thumb">
+                            <a href="team-details.html">
+                                <img src="~/images/about/lisenziya2.bmp" alt="team">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="team-wrap mb-40">
+                        <div class="team-thumb">
+                            <a href="team-details.html">
+                                <img src="~/images/about/lisenziya3.bmp" alt="team">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div class="team-wrap mb-40">
+                        <div class="team-thumb">
+                            <a href="team-details.html">
+                                <img src="~/images/about/cert.jpeg" alt="team">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Team Area End    -->
+    <!--    About Area Start   -->
+    <div class="about-area pt-120">
+        <div class="container">
+            <div class="row">
+                <h1>@SharedLocalizer["about-us"]</h1>
+                <p>
+                    @SharedLocalizer["about-us-text"]
+
+                </p>
+                <h1>@SharedLocalizer["safety"]</h1>
+
+                <p>
+                    @SharedLocalizer["safety-text"]
+
+                </p>
+                <h1>@SharedLocalizer["method"]</h1>
+
+                <p>
+                    @SharedLocalizer["methods-text"]
+
+                </p>
+                <div>
+                    <h1>
+                        @SharedLocalizer["environmental"]
+                    </h1>
+                    <p>
+                        @SharedLocalizer["environmental-text"]
+                    </p>
+
+                </div>
+
+                <div>
+                    <h1 style="display:block">
+                        @SharedLocalizer["policy"]
+                    </h1>
+                    <p>
+                        @SharedLocalizer["policy-text"]
+                    </p>
+
+                </div>
+                <h1>
+                    @SharedLocalizer["general"]
+                </h1>
+                <p>
+                    @SharedLocalizer["general-text"]
+
+                </p>
+                <h1>
+                    @SharedLocalizer["karim"]
+                </h1>
+                <p>
+                    @SharedLocalizer["karim-text"]
+                </p>
+                <h1>
+                    @SharedLocalizer["company"]
+                </h1>
+                <p>
+                    @SharedLocalizer["company-text"]
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--    About Area End    -->
+
+</main>
+<!--    Main Area End    -->

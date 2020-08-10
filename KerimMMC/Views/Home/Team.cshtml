@@ -1,0 +1,62 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+
+@{
+    ViewData["Title"] = "Team";
+}
+
+<!--    Main Area Start   -->
+<main>
+    <!--    Breadcrumb Area Start   -->
+    <section class="breadcrumb-area pt-180 pb-180 pb-md-150 pt-md-150 pb-xs-100 pt-xs-100" data-overlay="dark"
+             data-opacity="9" style="background-image: url(/images/bg/breadcrumb-bg-1.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="breadcrumb-content">
+                        <h3 class="title">
+                            @SharedLocalizer["team"]
+                        </h3>
+                        <ul>
+                            <li><a asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a></li>
+
+                            <li class="active">
+                                @SharedLocalizer["team"]
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Breadcrumb Area Start   -->
+    <!--    Team Area Start   -->
+    <div class="team-area pt-120 pb-120">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-4 col-lg-5 col-md-6 mb-md-50 mb-xs-50">
+                    <div class="team-wrap">
+                        <div class="team-thumb">
+                            <img src="~/images/team/Azar.png" alt="team">
+                        </div>
+                        <div class="team-details">
+                            <div class="team-author">
+                                <span>Direktor</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 col-lg-7 col-md-12">
+                    <div class="team-details">
+                        <h3>Quliyev Azər Rafiq</h3>
+                        <p>
+                            Bakı Dövlət Universiteti Hüquq fakultəsi Bir çox layihələrdə iştirak etmiş və tikintidə qaldırıcı qurğuların icarəsi,yerləşdirilməsi,iş prosesinin aparılması sahəsində 15 illik təcrübəyə sahibdir.Heydər Əliyev adına Neft Emalı Zavodunda kranların təmiri,rekonstruksiyalarında layihə rəhbəri vəzifəsini icra etmişdir.Bir çox beynəlxalq və yerli şirkətlərlə əməkdaşdır.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Team Area End    -->
+
+</main>
+<!--    Main Area End    -->

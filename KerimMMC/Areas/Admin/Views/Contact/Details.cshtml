@@ -1,0 +1,20 @@
+﻿@model Contact
+@{
+    ViewData["Title"] = "Details";
+}
+
+    <form method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="title">Tam Ad</label>
+            <input type="text" class="form-control" value="@Model.Fullname" disabled />
+        </div>
+        <div class="form-group">
+            <label for="title">Email</label>
+            <input type="text" class="form-control" value="@Model.Email"  disabled/>
+        </div>
+        <div class="form-group">
+            <label for="text">Mesaj</label>
+            <textarea class="form-control" rows="6" cols="50"  disabled>@Model.Message</textarea>
+        </div>
+    </form>
+

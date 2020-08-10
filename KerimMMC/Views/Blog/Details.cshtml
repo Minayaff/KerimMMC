@@ -1,0 +1,71 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+
+@model KerimMMC.Models.Blog
+@{
+    ViewData["Title"] = "Details";
+}
+
+<!--    Main Area Start   -->
+<main>
+    <!--    Breadcrumb Area Start   -->
+    <section class="breadcrumb-area pt-180 pb-180 pb-md-150 pt-md-150 pb-xs-100 pt-xs-100" data-overlay="dark"
+             data-opacity="9" style="background-image: url(/images/bg/breadcrumb-bg-1.jpg)">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <div class="breadcrumb-content">
+                        <h3 class="title">
+                            @SharedLocalizer["blog"]
+                        </h3>
+                        <ul>
+                            <li><a  asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a></li>
+                            <li class="active">
+                                @SharedLocalizer["blog"]
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    Breadcrumb Area Start   -->
+    <!--    Team Area Start   -->
+    <div class="blog-area pt-120 pb-40 pt-md-80 pt-xs-80">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12	">
+                    <div class="blog-box-wrapper">
+                        <div class="blog-single-details">
+                            <div class="blog-box-thumb" style="text-align: center;">
+                                <img src="~/images/blog/@Model.Image" alt="blog" />
+                            </div>
+                            <div class="blog-box-details">
+                                <div class="blog-box-meta">
+                                    <div class="blog-meta-date">
+                                        <a href="blog.html">@Model.CreatedDate.ToShortDateString()</a>
+                                    </div>
+                                    <div class="blog-meta-user">
+                                        <a><i class="fal fa-user"></i> BY ADMIN</a>
+                                    </div>
+                                </div>
+                                <div class="blog-box-title">
+                                    <h3>
+                                        @Model.HeadText
+                                    </h3>
+                                </div>
+                                <div class="blog-box-content">
+                                    <p>
+                                        @Model.Text
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--    Team Area End    -->
+
+</main>
+<!--    Main Area End    -->

@@ -1,0 +1,194 @@
+﻿@inject IStringLocalizer<SharedResources> SharedLocalizer
+
+<!doctype html>
+<html lang="az">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/images/logo/favicon.png">
+
+
+    <!-- All CSS -->
+    <link rel="stylesheet" href="~/css/animate.css">
+    <link rel="stylesheet" href="~/css/fontawesome.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/metisMenu.css">
+    <link rel="stylesheet" href="~/css/spacing.css">
+    <link rel="stylesheet" href="~/css/slick.css">
+    <link rel="stylesheet" href="~/css/odometer.css">
+    <link rel="stylesheet" href="~/css/main.css">
+
+    <title>KTQ MMC</title>
+</head>
+
+<body>
+    <!-- preloader -->
+    <div id="preloader">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <!-- preloader end  -->
+    <!--    Header Area Start   -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-6">
+                    <div class="site-logo">
+                        <a asp-controller="Home" asp-action="Index">
+                            <img src="~/images/logo/logos.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xl-10 d-none d-xl-block">
+                    <nav class="main-menu">
+                        <ul>
+                            <li class="has-children">
+                                <a asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a>
+                            </li>
+                            <li class="has-children">
+                                <a asp-controller="Home" asp-action="About">@SharedLocalizer["about"]</a>
+                            </li>
+                            <li class="has-children">
+                                <a asp-controller="Home" asp-action="Services">@SharedLocalizer["services"]</a>
+                            </li>
+                            <li class="has-children">
+                                <a asp-controller="Home" asp-action="Team">@SharedLocalizer["team"]</a>
+                            </li>
+                            <li class="has-children">
+                                <a asp-controller="Blog" asp-action="Index">@SharedLocalizer["blog"]</a>
+                            </li>
+                            <li class="has-children">
+                                <a asp-controller="Home" asp-action="Contact">@SharedLocalizer["contact"]</a>
+                            </li>
+                            <li class="has-children">
+
+                                @await Component.InvokeAsync("Language")
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-xl-3 col-lg-9 col-md-9 col-6 d-flex justify-content-end align-items-center">
+                    <div class="open-mobile-menu">
+                        <a href="javascript:void(0);">
+                            <i class="far fa-bars"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--    Header Area End    -->
+    <!--    Slide Bar Start   -->
+    <aside class="slide-bar">
+        <div class="close-mobile-menu">
+            <a href="javascript:void(0);"><i class="fas fa-times"></i></a>
+        </div>
+        <nav class="side-mobile-menu">
+            <ul id="mobile-menu-active">
+                <li class="has-children">
+                    <a asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="About">@SharedLocalizer["about"]</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Services">@SharedLocalizer["services"]</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Team">@SharedLocalizer["team"]</a>
+                </li>
+                <li>
+                    <a asp-controller="Blog" asp-action="Index">@SharedLocalizer["blog"]</a>
+                </li>
+                <li>
+                    <a asp-controller="Home" asp-action="Contact">@SharedLocalizer["contact"]</a>
+                </li>
+                <li>
+
+                    @await Component.InvokeAsync("Language")
+
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="body-overlay"></div>
+    <!--    Slide Bar End    -->
+
+
+    @RenderBody()
+
+
+
+
+    <!--    Footer Area Start    -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-xl-4 col-md-4">
+                    <div class="footer-logo mb-xs-30">
+                        <a href="/Home/Index"><img src="~/images/logo/logos.png" alt="logo"></a>
+                    </div>
+                    <ul class="footer-contact">
+                        <li>(012) 323 16 07 </li>
+                        <li>Qara qarayev/Özbəkistan küç 61 A</li>
+                        <li>kttq.mmc@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-9 col-xl-8 col-md-8">
+                    <div class="footer-widget">
+                        <div class="textwidget">
+                            <ul>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Index">@SharedLocalizer["mainPage"]</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="About">@SharedLocalizer["about"]</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Services">@SharedLocalizer["services"]</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Team">@SharedLocalizer["team"]</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Blog" asp-action="Index">@SharedLocalizer["blog"]</a>
+                                </li>
+                                <li>
+                                    <a asp-controller="Home" asp-action="Contact">@SharedLocalizer["contact"]</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!--    Footer Area End    -->
+
+    <div id="scrollUp"><i class="fas fa-level-up-alt"></i></div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/metisMenu.min.js"></script>
+    <script src="~/js/slick.min.js"></script>
+    <script src="~/js/jquery.appear.js"></script>
+    <script src="~/js/odometer.min.js"></script>
+    <script src="~/js/imagesloaded.pkgd.min.js"></script>
+    <script src="~/js/isotope.pkgd.min.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+
+
+</html>
